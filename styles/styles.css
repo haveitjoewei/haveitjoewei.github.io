@@ -1,0 +1,191 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  box-align: center;
+  box-pack: center;
+  transform: translate3d(0, 0, 0);
+  background: #f2f2f2;
+}
+
+.name { 
+	color: #111; 
+	font-family: 'Helvetica Neue', sans-serif; 
+	font-size: 70px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 1; 
+	text-align: center;
+}
+
+.name a:hover {
+	color: #890483;
+	-moz-transition: all 0.25s linear;
+  	-o-transition: all 0.25s linear;
+  	-webkit-transition: all 0.25s linear;
+  	transition: all 0.5s linear;
+}
+
+h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+
+p { color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word; }
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+
+#coolNav ul {
+  position: relative;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0
+}
+
+#coolNav li ul{
+    position:absolute;
+    list-style:none;
+    text-align:center;
+    width:180px;
+    left:0%;
+    margin-left:-60px;
+    top:0px;
+    font:bold 12px 'Open Sans Condensed', sans-serif;
+
+    /* This is important for the show/hide CSS animation */
+    max-height:0px;
+    overflow:hidden;
+
+    -webkit-transition:max-height 0.4s linear;
+    -moz-transition:max-height 0.4s linear;
+    transition:max-height 0.4s linear;
+}
+
+#coolNav li:hover ul{
+	max-height: 200px;
+	position: relative;
+}
+
+.list-item {
+  left:50%;
+  margin-left: -100px;
+  margin-top: 20px;
+  background: #000000;
+  color: #575757;
+  text-align: center;
+  height: 5em;
+  width: 10em;
+  vertical-align: middle;
+  line-height: 5em;
+  border-bottom:;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif; 
+  -moz-box-shadow: -1em 1em 0.1 #e1e1e1;
+  -webkit-box-shadow: -1em 1em 0.1 #e1e1e1;
+  box-shadow: -1em 1em 0.1em #e1e1e1;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.list-item:hover {
+  -moz-transform: translate(0.9em, -0.9em);
+  -ms-transform: translate(0.9em, -0.9em);
+  -webkit-transform: translate(0.9em, -0.9em);
+  transform: translate(0.9em, -0.9em);
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  -moz-box-shadow: -1em 1em 0.15 #e1e1e1;
+  -webkit-box-shadow: -1em 1em 0.15 #e1e1e1;
+  box-shadow: -1em 1em 0.15em #e1e1e1;
+}
+
+.green:hover	{	background:#00c08b;color:#127a5d;}
+.red:hover 	{	background:#ea5080;color:#aa2a52;}
+.blue:hover 	{	background:#53bfe2;color:#2884a2;}
+.yellow:hover	{	background:#f8c54d;color:#ab8426;}
+.purple:hover	{	background:#df6dc2;color:#9f3c85;}
+
+.list-item:before, .list-item:after {
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.list-item:before {
+  content: "";
+  position: absolute;
+  height: 5em;
+  background: #121212;
+  width: 0.25em;
+  top: 0.13em;
+  left: -0.25em;
+  -moz-transform: skewY(-45deg);
+  -ms-transform: skewY(-45deg);
+  -webkit-transform: skewY(-45deg);
+  transform: skewY(-45deg);
+}
+
+.list-item:after {
+  content: "";
+  position: absolute;
+  height: 10em;
+  background: #181818;
+  width: 0.25em;
+  bottom: -5.15em;
+  left: 4.7em;
+  -moz-transform: rotate(90deg) skew(0deg, 45deg);
+  -ms-transform: rotate(90deg) skew(0deg, 45deg);
+  -webkit-transform: rotate(90deg) skew(0deg, 45deg);
+  transform: rotate(90deg) skew(0deg, 45deg);
+}
+
+.list-item:hover:before, .list-item:hover:after {
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.list-item:hover:before {
+  background: #b65234;
+  width: 0.25em;
+  top: 0.13em;
+  left: -0.25em;
+}
+.list-item:hover:after {
+  background: #b65234;
+  width: 0.25em;
+  bottom: -5.1em;
+  left: 4.7em;
+  height: 10em;
+}
+
+.green:hover:before, .green:hover:after	{	background:#127a5d;}
+.red:hover:before, .red:hover:after 	{	background:#aa2a52;}
+.blue:hover:before, .blue:hover:after 	{	background:#2884a2;}
+.yellow:hover:before, .yellow:hover:after	{	background:#ab8426;}
+.purple:hover:before, .purple:hover:after	{	background:#9f3c85;}
