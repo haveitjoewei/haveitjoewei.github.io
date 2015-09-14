@@ -4,8 +4,4 @@ This project is currently just a shell. It serves as a pretty good indication of
 
 ## How to view
 
-Install npm
-
-Run `npm install -g bower grunt` to install bower and grunt
-
-Run `grunt serve`
+http://haveitjoewei.github.io/
